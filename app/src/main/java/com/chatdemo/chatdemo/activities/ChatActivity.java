@@ -50,6 +50,7 @@ public class ChatActivity extends AppCompatActivity {
 
         context = this;
         name = getIntent().getExtras().getString("name");
+        setTitle(name);
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
 
         initLayout();
